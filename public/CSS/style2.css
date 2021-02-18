@@ -10,11 +10,12 @@ html, body {
 }
 
 body {
-    background-image: url('../IMG/lander.jpg');
+    background-image: url('../IMG/steelbridge.jpg');
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 
@@ -64,7 +65,7 @@ nav {
 
 
 li a:hover {
-    background-color: #3498DB;
+    background-color: #1ED9A6;
 
 }
 
@@ -138,51 +139,6 @@ h2 {
 .push {
     margin-left: 18%;
     margin-top: 2%;
-}
-
-.dropdown .dropbtn {
-    font-size: 18px;
-    font-weight: bold;
-    display: flex;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 26px 26px;
-    background-color: black;
-    font-family: 'Open Sans', sans-serif;
-    margin: 1px;
-}
-
-.nav-links a:hover, .dropdown:hover .dropbtn {
-    background-color: #3498DB;
-}
-
-.dropdown-content {
-
-    display: none;
-    position: absolute;
-    background-color: black;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    display: block;
-    float: left;
-    color: black;
-    padding: 4px 8px;
-    text-decoration: none;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #3498DB;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-
 }
 
 
@@ -301,10 +257,6 @@ h2 {
 
     h3 {
         word-break: break-word;
-    }
-
-    .logo {
-        font-size: 21%;
     }
 
 

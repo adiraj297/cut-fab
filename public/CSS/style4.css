@@ -10,14 +10,38 @@ html, body {
 }
 
 body {
-    background-image: url('../IMG/deck1.jpg');
+    position: relative;
+    background-image: url('../IMG/decker.jpg');
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    background-size: auto;
+
 }
 
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #5DADE2;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
 
 nav {
     display: flex;
@@ -110,25 +134,26 @@ h2 {
     margin: 10px -14px;
 }
 
+/* Add padding BETWEEN each column (if you want) */
 .row,
 .row > .column {
     padding: 8px;
 }
 
-
+/* Create four equal columns that floats next to each other */
 .column {
     float: left;
     width: 25%;
 }
 
-
+/* Clear floats after rows */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 
-
+/* Content */
 .content {
     background-color: white;
     padding: 4px;
@@ -139,6 +164,21 @@ h2 {
 .push {
     margin-left: 18%;
     margin-top: 2%;
+}
+
+.middle {
+
+    border: 5px solid black;
+    background-color: white;
+    margin-top: 8%;
+    margin-left: 14%;
+    font-family: 'Open Sans', sans-serif;
+    width: 69%;
+    min-height: 300px;
+    padding: 20px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow: hidden;
 }
 
 
@@ -160,26 +200,20 @@ h2 {
 
 @media (max-width: 1024px) {
 
-    .column {
-        width: 50%;
-    }
 
     .nav-links {
         width: 48%;
     }
 
     .footer {
-        position: relative;
+        position: fixed;
     }
 
-    .intro {
-        margin-top: 60px;
+    .middle {
+        margin-top: 18%;
+        margin-bottom: 8%;
     }
 
-    .push {
-        margin-top: 80px;
-        margin-bottom: 40px;
-    }
 
 }
 
@@ -221,44 +255,25 @@ h2 {
         transform: translate(0%);
     }
 
-    #googleForm {
-        margin-right: 50px;
-        margin-top: 20px;
-    }
-
-    .push {
-        margin: 2% -6px;
-        padding: 10px;
-    }
-
-    .column {
-        width: 100%;
-    }
-
-    .content {
-        padding: 10px;
-    }
-
-    .intro {
-        padding: 2%;
-        width: 100%;
-        margin: 10px 0;
-
-    }
 
     h2 {
         font-size: 20px;
         word-break: break-word;
     }
 
+
     .footer {
         position: relative;
+    }
+
+    .middle {
+        width: 72%;
+        padding: 10px;
     }
 
     h3 {
         word-break: break-word;
     }
-
 
 
 }
@@ -288,10 +303,4 @@ h2 {
 }
 
 
-#googleForm {
-
-    text-align: center;
-    margin-top: 20px;
-    margin-right: 20px;
-}
 
