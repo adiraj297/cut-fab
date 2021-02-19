@@ -57,6 +57,9 @@ nav {
     font-weight: bold;
     display: inline-block;
     color: white;
+    margin: 2px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
     text-align: center;
     padding: 26px 26px;
     text-decoration: none;
@@ -67,6 +70,10 @@ nav {
 li a:hover {
     background-color: #1E81D9;
 
+}
+
+li a.active {
+    background: #1E81D9;
 }
 
 .burger {
