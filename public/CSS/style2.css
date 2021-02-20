@@ -244,15 +244,18 @@ h2 {
         margin-top: 20px;
     }
 
-    .push {
-        margin: 2% -6px;
+    .pusher {
+        /*margin: 2% -6px;*/
+        margin: 0;
         padding: 10px;
     }
 
-    .pusher {
-        margin: 2% -6px;
+    .push {
+        /*margin: 2% -6px;*/
+        margin: 0;
         padding: 10px;
     }
+
 
     .column {
         width: 100%;
