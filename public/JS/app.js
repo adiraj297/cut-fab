@@ -40,15 +40,12 @@ function carousel() {
 
 var sliderFlag = true;
 
-function toggleSlideShow(){
+function toggleSlideShow1() {
 
-    if(sliderFlag)
-    {
+    if (sliderFlag) {
         document.getElementById("slider").style.display = "none";
         sliderFlag = false;
-    }
-    else
-    {
+    } else {
         document.getElementById("slider").style.display = "block";
         sliderFlag = true;
     }

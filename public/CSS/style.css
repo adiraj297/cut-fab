@@ -88,11 +88,14 @@ li a.active {
 
 }
 .round{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     background-color: white;
-    margin-top: 5%;
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-bottom: 5%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    width: 60%;
+    height: 50%;
     border: 5px solid black;
 
 }
@@ -114,19 +117,19 @@ li a.active {
 .intro {
 
     background-color: white;
-    margin-top: 4%;
+    margin-top: 2%;
     margin-bottom: 5%;
     margin-left: 14%;
     font-family: 'Open Sans', sans-serif;
     width: 69%;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     word-break: break-word;
 
 }
 
 h2 {
-    font-size: 27px;
+    font-size: 20px;
     word-break: break-word;
     letter-spacing: 3px;
     text-transform: capitalize;
@@ -293,6 +296,15 @@ h2 {
 
     h3 {
         word-break: break-word;
+    }
+
+    .round {
+
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 70%;
+        height: 90%;
     }
 
 
