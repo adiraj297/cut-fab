@@ -94,14 +94,14 @@ li a.active {
     background-color: white;
     margin-top: 1.5%;
     margin-bottom: 1.5%;
-    width: 60%;
-    height: 50%;
+    width: 55%;
+    height: 40%;
     border: 5px solid black;
 
 }
 
 .responsive {
-    width:60%;
+    width: 50%;
     border: 5px solid black;
     margin-left: auto;
     margin-right: auto;
