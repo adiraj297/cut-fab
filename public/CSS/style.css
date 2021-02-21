@@ -58,6 +58,10 @@ img {
     border: 5px solid black;
 }
 
+.app-text-dev{
+    font-family: 'Open Sans', sans-serif;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
