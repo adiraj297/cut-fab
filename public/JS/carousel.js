@@ -19,9 +19,13 @@ function toggleSlideShow() {
 
     if (sliderFlag) {
         document.getElementById("slider").style.display = "none";
+        document.getElementById("intro2").style.display = "block";
+
+
         sliderFlag = false;
     } else {
         document.getElementById("slider").style.display = "block";
+        document.getElementById("intro2").style.display = "none";
         sliderFlag = true;
     }
 
