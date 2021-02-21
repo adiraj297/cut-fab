@@ -18,7 +18,7 @@ body {
     position: relative;
 }
 
-a:link {
+.tell{
     color: green;
     background-color: transparent;
     text-decoration: none;
