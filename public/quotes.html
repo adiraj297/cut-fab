@@ -32,18 +32,42 @@
 
 </nav>
 
+<h3>Please fill in the Contact Form below with your details and we shall get back to you with an accurate quote for your
+    project:</h3>
 
-<!--<div id="googleForm">-->
-<!--    <iframe frameborder="0"-->
-<!--            height="1427" marginheight="0" marginwidth="0"-->
-<!--            src="https://docs.google.com/forms/d/e/1FAIpQLSd5uy_5vc6ozsY1kcGRliC8hYH9w_WqEU1acN0tJQ6rrqEJmg/viewform?embedded=true"-->
-<!--            width="380">Loading…-->
-<!--    </iframe>-->
-<!--</div>-->
+<div class="container">
+    <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input id="fname" name="firstname" placeholder="Your name.." type="text">
 
-<div class="test">
-    <b>This is quotes work in progress!!</b>
+        <label for="lname">Last Name</label>
+        <input id="lname" name="lastname" placeholder="Your last name.." type="text">
+
+        <label for="phno">Phone Number</label>
+        <input id="phno" name="phno" placeholder="Your phone number.." type="text">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" placeholder="Your email.." type="text">
+
+        <label for="contact">Preferred Method of contact</label>
+        <select id="contact" name="contact">
+            <option value="canada">Phone</option>
+            <option value="australia">Email</option>
+
+
+        </select>
+
+        <label for="subject">Any queries you may have regarding to your project:</label>
+        <textarea id="subject" name="subject" placeholder="Queries.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
 </div>
+
+
+<!--<div class="test">-->
+<!--    <b>This is quotes work in progress!!</b>-->
+<!--</div>-->
 
 
 <script src="JS/app.js"></script>
