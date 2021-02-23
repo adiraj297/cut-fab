@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['submit'])){
+
     $to = "renegadewebdev@outlook.com.au"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
     $first_name = $_POST['firstname'];
@@ -20,8 +20,6 @@ if(isset($_POST['submit'])){
         ');';
             $js_code = '<script>' . $js_code . '</script>';
             echo $js_code;
-    }
-
 
 
 ?>
