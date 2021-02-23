@@ -42,7 +42,7 @@ a:active {
     text-decoration: underline;
 }
 
-img {
+.myimg {
     max-width: 100%;
     max-height: auto;
     /* position: relative; */
@@ -73,11 +73,6 @@ nav {
     font-size: large;
 }
 
-.logo {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 20px;
-}
 
 .nav-links {
     list-style-type: none;
@@ -275,8 +270,8 @@ h2 {
     .nav-links {
         position: absolute;
         right: 0;
-        height: 92vh;
-        top: 7.9vh;
+        height: 86vh;
+        top: 20vh;
         background-color: #000000;
         display: flex;
         flex-direction: column;
@@ -293,6 +288,14 @@ h2 {
 
     .burger {
         display: block;
+        margin-top: 15%;
+        margin-right: 5%;
+    }
+
+    .logo {
+        height: 8%;
+        width: 20%;
+        margin-right: 70%;
     }
 
     .nav-active {

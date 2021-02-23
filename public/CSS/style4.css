@@ -255,6 +255,12 @@ h2 {
         margin-right: 5%;
     }
 
+    .logo {
+        height: 8%;
+        width: 20%;
+        margin-right: 70%;
+    }
+
     .nav-active {
         transform: translate(0%);
     }
@@ -280,11 +286,6 @@ h2 {
         word-break: break-word;
     }
 
-    .logo {
-        height: 8%;
-        width: 20%;
-        margin-right: 70%;
-    }
 
 }
 
