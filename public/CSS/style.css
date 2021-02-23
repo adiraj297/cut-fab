@@ -302,11 +302,6 @@ h2 {
         transform: translate(0%);
     }
 
-    #googleForm {
-        margin-right: 50px;
-        margin-top: 20px;
-    }
-
     .push {
         margin: 2% -6px;
         padding: 10px;
@@ -380,11 +375,4 @@ h2 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-
-#googleForm {
-
-    text-align: center;
-    margin-top: 20px;
-    margin-right: 20px;
-}
 
