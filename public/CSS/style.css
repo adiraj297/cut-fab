@@ -135,8 +135,8 @@ li a.active {
     margin-right: auto;
     display: block;
     background-color: white;
-    margin-top: 1.5%;
-    margin-bottom: 1.5%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
     width: 60%;
     height: 50%;
     border: 5px solid black;
