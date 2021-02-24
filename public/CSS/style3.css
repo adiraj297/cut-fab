@@ -15,6 +15,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -122,6 +123,10 @@ h2 {
     width: 25%;
 }
 
+p {
+    text-align: center;
+    color:white;
+}
 
 .row:after {
     content: "";
@@ -144,7 +149,7 @@ h2 {
 
 
 .footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -186,6 +191,49 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 30%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: black;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -225,6 +273,11 @@ input[type=submit]:hover {
         position: relative;
     }
 
+    h3{
+
+        font-size: 15px;
+    }
+
     .nav-links {
         position: absolute;
         right: 0;
@@ -260,11 +313,6 @@ input[type=submit]:hover {
         transform: translate(0%);
     }
 
-    #googleForm {
-        margin-right: 50px;
-        margin-top: 20px;
-    }
-
     .push {
         margin: 2% -6px;
         padding: 10px;
@@ -276,6 +324,44 @@ input[type=submit]:hover {
 
     .content {
         padding: 10px;
+    }
+
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Modal Content */
+    .modal-content {
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    .close {
+        color: white;
+        float: right;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100%; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     }
 
     .intro {
