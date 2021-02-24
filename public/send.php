@@ -1,48 +1,58 @@
 <?php
 require 'PHPMailer/class.phpmailer.php';
 
-if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['subject']) && isset($_POST['message']))
-{
-  $name=$_POST['name'];
-  $email=$_POST['email'];
-  $msg=$_POST['message'];
-     
-            $mail = new PHPMailer(true); 
+try {
+            $firstname=$_POST['firstname'];
+            $lastname=$_POST['lastname'];
+            $phno=$_POST['phno'];
+            $cemail=$_POST['email'];
+            $contact=$_POST['contact'];
+            $msg=$_POST['message'];
 
-        	$mail->IsSMTP();                           
-        	$mail->SMTPAuth   = false;                 
-        	$mail->Port       = 25;                    
-        	$mail->Host       = "localhost"; 
+            $mail = new PHPMailer(true);
+
+        	$mail->IsSMTP();
+        	$mail->SMTPAuth   = false;
+        	$mail->Port       = 25;
+        	$mail->Host       = "localhost";
         	$mail->Username   = "test@cutandfab.com.au";//Enter Username of Webmail
         	$mail->Password   = "Cutandfab789!";  //Password of webmail
 
         	$mail->IsSendmail();
 
         	$mail->From       = "test@cutandfab.com.au";// Erom Email Address
-        	$mail->FromName   = "Test"; //Name
-        
-        	$mail->AddAddress($email);
-        
-        	$mail->Subject  = "Thank you for contacting US";
-        	$mail->WordWrap   = 80; 
-        
-            $body= $name."Thank You For Contacting Us";
+        	$mail->FromName   = "Quote Notification"; //Name
 
-        	$mail->MsgHTML($body);
-        	$mail->IsHTML(true); 
+        	$mail->AddAddress('admin@cutandfab.com.au');
+
+        	$mail->Subject  = "New quote query from ".$firstname;
+
+
+            $BodyEmail = "<img src='https://cutandfab.com.au/IMG/logo1.jpg'> <h2>New Quote Request</h2>                  <p> You have a new quote request.</p>                   <table> <tr>  <td><b>First Name: </b></td>  <td>$firstname</td>  </tr>  <tr>  <td><b>Last Name: </b></td>   <td>$lastname</td>                     </tr>
+                    <tr>
+                      <td><b>Phone: </b></td>
+                      <td>$phno</td>
+                    </tr>
+                    <tr>
+                      <td><b>Email: </b></td>
+                      <td>$cemail</td>
+                    </tr>
+                     <tr>
+                      <td><b>Preferred Method of contact: </b></td>
+                      <td>$contact</td>
+                    </tr>
+                    <tr>
+                      <td><b>Message: </b></td>
+                      <td>$msg</td>
+                    </tr>
+                  </table>";
+
+        	$mail->MsgHTML($BodyEmail);
+        	$mail->IsHTML(true);
         	$mail->Send();
-        	
-        	
-        	    
-        	echo '<script language="javascript">';
-	        echo 'alert("Thank You Contacting Us We Will Response You As Early Possible")';
-	        echo '</script>';
-	      	echo "<script>setTimeout(\"location.href = 'contact_us.php';\",00);</script>";
-           
-}else{
-	echo '<script language="javascript">';
-	echo 'alert("Something Wrong.")';
-	echo '</script>';
-	echo "<script>setTimeout(\"location.href = 'contact_us.php';\",00);</script>";
-}
 
+    echo "<script>setTimeout(\"location.href = 'quotes.php?success=true';\",00);</script>";
+    } catch (Exception $e) {
+         echo "<script>setTimeout(\"location.href = 'quotes.php?success=false';\",00);</script>";
+
+    }
