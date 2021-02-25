@@ -43,16 +43,16 @@
     <br>
     <form action="send.php" method="post">
         <label for="fname">First Name</label>
-        <input id="fname" name="firstname" required placeholder="Your name.." type="text">
+        <input id="fname" name="firstname" required placeholder="Example: John" type="text">
 
         <label for="lname">Last Name</label>
-        <input id="lname" name="lastname" required  placeholder="Your last name.." type="text">
+        <input id="lname" name="lastname" required  placeholder="Example: Doe" type="text">
 
         <label for="phno">Phone Number</label>
-        <input id="phno" name="phno" required placeholder="Your phone number.." type="text">
+        <input id="phno" name="phno" required placeholder="Example: 0423099987" type="text">
 
         <label for="email">Email</label>
-        <input id="email" name="email" required placeholder="Your email.." type="text">
+        <input id="email" name="email" required placeholder="Example: johndoe@gmail.com" type="text">
 
         <label for="contact">Preferred Method of contact</label>
         <select id="contact" required name="contact">
@@ -63,7 +63,7 @@
         </select>
 
         <label for="subject">Any queries you may have regarding to your project:</label>
-        <textarea id="message" name="message" placeholder="Queries.." style="height:200px"></textarea>
+        <textarea id="message" name="message" placeholder="Example: Hi, I want to get some commercial steel, Thanks!" style="height:200px"></textarea>
 
         <input type="submit" value="Submit">
     </form>
