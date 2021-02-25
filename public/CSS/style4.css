@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    background-image: url('../IMG/steeltower.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+}
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #1E81D9;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #000000;
+    color: #f9f9f9;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+}
+
+
+.test {
+    margin-top: 670px;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 1.2%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav-links li a {
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    color: white;
+    margin: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 26px 26px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+li a:hover {
+    background-color: #1E81D9;
+
+}
+
+li a.active {
+    background: #1E81D9;
+}
+
+
+.burger {
+
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 4px;
+    background-color: #f9f9f9;
+    margin: 5px;
+
+}
+
+.intro {
+
+    border: 5px solid black;
+    background-color: white;
+    margin-top: 2%;
+    margin-left: 14%;
+    font-family: 'Open Sans', sans-serif;
+    width: 69%;
+    padding: 20px;
+    text-align: center;
+    word-break: break-word;
+
+}
+
+h2 {
+    font-size: 27px;
+    word-break: break-word;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+
+
+.row {
+    margin: 10px -14px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 4px;
+    border: 5px solid black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.push {
+    margin-left: 18%;
+    margin-top: 2%;
+}
+
+.middle {
+
+    border: 5px solid black;
+    background-color: white;
+    margin-top: 0.5%;
+    margin-left: 14%;
+    margin-bottom: 0.5%;
+    font-family: 'Open Sans', sans-serif;
+    width: 69%;
+    min-height: 300px;
+    padding: 20px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+
+}
+
+
+@media (max-width: 1024px) {
+
+
+    .nav-links {
+        width: 48%;
+    }
+
+    .footer {
+        position: fixed;
+    }
+
+    .middle {
+        margin-top: 18%;
+        margin-bottom: 2%;
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 86vh;
+        top: 20vh;
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in;
+
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+        margin-top: 15%;
+        margin-right: 5%;
+    }
+
+    .logo {
+        height: 8%;
+        width: 20%;
+        margin-right: 70%;
+    }
+
+    .nav-active {
+        transform: translate(0%);
+    }
+
+
+    h2 {
+        font-size: 20px;
+        word-break: break-word;
+    }
+
+
+    .footer {
+        position: relative;
+    }
+
+    .middle {
+        width: 100%;
+        margin: 0;
+
+    }
+
+    h3 {
+        word-break: break-word;
+    }
+
+
+}
+
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
