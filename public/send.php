@@ -15,12 +15,12 @@ try {
         	$mail->SMTPAuth   = false;
         	$mail->Port       = 25;
         	$mail->Host       = "localhost";
-        	$mail->Username   = "test@cutandfab.com.au";//Enter Username of Webmail
+        	$mail->Username   = "notification@cutandfab.com.au";//Enter Username of Webmail
         	$mail->Password   = "Cutandfab789!";  //Password of webmail
 
         	$mail->IsSendmail();
 
-        	$mail->From       = "test@cutandfab.com.au";// Erom Email Address
+        	$mail->From       = "notification@cutandfab.com.au";// Erom Email Address
         	$mail->FromName   = "Quote Notification"; //Name
 
         	$mail->AddAddress('admin@cutandfab.com.au');
