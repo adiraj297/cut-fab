@@ -18,7 +18,7 @@ if (!empty($_POST) && isset($_POST['submit']))
         	$mail->Port       = 25;
         	$mail->Host       = "localhost";
         	$mail->Username   = "testemail@domain.com";//Enter Username of Webmail
-        	$mail->Password   = "passowrd";  //Password of webmail
+        	$mail->Password   = "password";  //Password of webmail
 
         	$mail->IsSendmail();
 
