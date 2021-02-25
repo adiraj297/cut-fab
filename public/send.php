@@ -17,12 +17,12 @@ if (!empty($_POST) && isset($_POST['submit']))
         	$mail->SMTPAuth   = false;
         	$mail->Port       = 25;
         	$mail->Host       = "localhost";
-        	$mail->Username   = "notification@cutandfab.com.au";//Enter Username of Webmail
-        	$mail->Password   = "Cutandfab789!";  //Password of webmail
+        	$mail->Username   = "testemail@domain.com";//Enter Username of Webmail
+        	$mail->Password   = "passowrd";  //Password of webmail
 
         	$mail->IsSendmail();
 
-        	$mail->From       = "notification@cutandfab.com.au";// Erom Email Address
+        	$mail->From       = "testemail@domain.com";// Erom Email Address
         	$mail->FromName   = "Quote Notification"; //Name
 
         	$mail->AddAddress('admin@cutandfab.com.au');
