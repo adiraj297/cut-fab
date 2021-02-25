@@ -1,7 +1,9 @@
 <?php
 require 'PHPMailer/class.phpmailer.php';
 
-try {
+if (!empty($_POST) && isset($_POST['submit']))
+{
+    try {
             $firstname=$_POST['firstname'];
             $lastname=$_POST['lastname'];
             $phno=$_POST['phno'];
@@ -51,8 +53,13 @@ try {
         	$mail->IsHTML(true);
         	$mail->Send();
 
-    echo "<script>setTimeout(\"location.href = 'quotes.php?success=true';\",00);</script>";
-    } catch (Exception $e) {
-         echo "<script>setTimeout(\"location.href = 'quotes.php?success=false';\",00);</script>";
+            echo "<script>setTimeout(\"location.href = 'quotes.php?success=true';\",00);</script>";
+        } catch (Exception $e) {
+            echo "<script>setTimeout(\"location.href = 'quotes.php?success=false';\",00);</script>";
 
     }
+}
+else
+{
+    echo "<script>setTimeout(\"location.href = 'quotes.php?success=invalid';\",00);</script>";
+}

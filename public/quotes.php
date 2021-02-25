@@ -65,7 +65,7 @@
         <label for="subject">Any queries you may have regarding to your project:</label>
         <textarea id="message" name="message" placeholder="Example: Hi, I want to get some commercial steel, Thanks!" style="height:200px"></textarea>
 
-        <input type="submit" value="Submit">
+        <input name="submit" type="submit" value="Submit">
     </form>
 </div>
 
