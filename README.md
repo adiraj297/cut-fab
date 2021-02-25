@@ -9,3 +9,13 @@
 - HTML
 - CSS
 - Javascript
+
+## Screenshots:
+
+![HomePage](https://github.com/adiraj297/cut-fab/blob/dev/public/screenshots/ss1.png)
+![services_Web](https://github.com/adiraj297/cut-fab/blob/dev/public/screenshots/ss2.png)
+![Quotes_Web](https://github.com/adiraj297/cut-fab/blob/dev/public/screenshots/ss3.png)
+![contact_Web](https://github.com/adiraj297/cut-fab/blob/dev/public/screenshots/ss4.png)
+![HomePage_Phone](https://github.com/adiraj297/cut-fab/blob/dev/public/screenshots/ms1.png)
+![contact_phone](https://github.com/adiraj297/cut-fab/blob/dev/public/screenshots/ms2.png)
+
