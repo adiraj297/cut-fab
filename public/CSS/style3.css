@@ -245,6 +245,17 @@ input[type=submit]:hover {
 
     }
 
+    .container {
+        height: 100%;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
 }
 
 
