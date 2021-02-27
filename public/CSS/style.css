@@ -225,6 +225,30 @@ h2 {
 
 }
 
+@media only screen and (min-width: 834px) and (max-width: 1194px) {
+
+    .nav-links li a {
+        font-size: 18px;
+        padding: 17px 17px;
+
+    }
+
+    .myimg {
+        max-width: 100%;
+        max-height: auto;
+        height: 140%;
+        width: 140%;
+    }
+
+    .round {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 60%;
+        height: 60%;
+    }
+
+}
+
 
 @media (max-width: 1024px) {
 

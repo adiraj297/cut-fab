@@ -237,6 +237,17 @@ input[type=submit]:hover {
 }
 
 
+@media only screen and (min-width: 834px) and (max-width: 1194px) {
+
+    .nav-links li a {
+        font-size: 18px;
+        padding: 17px 17px;
+
+    }
+
+}
+
+
 @media (max-width: 1024px) {
 
     .column {
