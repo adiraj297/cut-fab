@@ -237,6 +237,28 @@ input[type=submit]:hover {
 }
 
 
+@media only screen and (min-width: 834px) and (max-width: 1194px) {
+
+    .nav-links li a {
+        font-size: 18px;
+        padding: 17px 17px;
+
+    }
+
+    .container {
+        height: 100%;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
+}
+
+
 @media (max-width: 1024px) {
 
     .column {

@@ -17,17 +17,24 @@ var sliderFlag = true;
 
 function toggleSlideShow() {
 
-    if (sliderFlag) {
-        document.getElementById("slider").style.display = "none";
-        document.getElementById("intro2").style.display = "block";
+        if (sliderFlag) {
+            document.getElementById("slider").style.display = "none";
+            document.getElementById("intro2").style.display = "block";
+            if (document.documentElement.clientWidth >= '768' && document.documentElement.clientHeight <= '1024') {
+                document.getElementById("intro3").style.display = "block";
+                document.getElementById("intro4").style.display = "block";
+            }
+            sliderFlag = false;
 
-
-        sliderFlag = false;
-    } else {
-        document.getElementById("slider").style.display = "block";
-        document.getElementById("intro2").style.display = "none";
-        sliderFlag = true;
-    }
+            } else {
+            document.getElementById("slider").style.display = "block";
+            document.getElementById("intro2").style.display = "none";
+            if (document.documentElement.clientWidth >= '768' && document.documentElement.clientHeight <= '1024') {
+                document.getElementById("intro3").style.display = "none";
+                document.getElementById("intro4").style.display = "none";
+            }
+            sliderFlag = true;
+        }
 
 
 }

@@ -132,41 +132,10 @@ h2 {
 }
 
 
-.row {
-    margin: 10px -14px;
-}
-
-/* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .column {
-    padding: 8px;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 25%;
-}
-
-/* Clear floats after rows */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Content */
-.content {
-    background-color: white;
-    padding: 4px;
-    border: 5px solid black;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.push {
-    margin-left: 18%;
-    margin-top: 2%;
-}
+/*.push {*/
+/*    margin-left: 18%;*/
+/*    margin-top: 2%;*/
+/*}*/
 
 .middle {
 
@@ -199,6 +168,23 @@ h2 {
 
 }
 
+@media only screen and (min-width: 834px) and (max-width: 1194px) {
+
+    .nav-links li a {
+        font-size: 18px;
+        padding: 17px 17px;
+
+    }
+
+    .middle {
+        margin-top: 14%;
+        margin-bottom: 2%;
+        width: 70%;
+        height: 80%;
+    }
+
+}
+
 
 @media (max-width: 1024px) {
 
@@ -211,10 +197,10 @@ h2 {
         position: fixed;
     }
 
-    .middle {
-        margin-top: 18%;
-        margin-bottom: 2%;
-    }
+    /*.middle {*/
+    /*    margin-top: 18%;*/
+    /*    margin-bottom: 2%;*/
+    /*}*/
 
 
 }
